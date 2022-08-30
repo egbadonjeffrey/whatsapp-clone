@@ -14,7 +14,7 @@ import "./Sidebar.css";
 
 const Sidebar = () => {
   const [rooms, setRooms] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   useEffect(() => {
     const getRoomsData = () => {
